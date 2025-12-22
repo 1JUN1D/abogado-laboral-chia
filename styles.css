@@ -117,7 +117,7 @@ a {
     position: relative;
     height: 600px;
     background: linear-gradient(rgba(26, 58, 82, 0.8), rgba(26, 58, 82, 0.8)),
-                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600') center/cover;
+                url('wallpaper.png') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -12,7 +12,7 @@
 .hero-category {
     position: relative;
     height: 400px;
-    background: linear-gradient(rgba(26, 58, 82, 0.85), rgba(26, 58, 82, 0.85)),
+    background: linear-gradient(rgba(166, 63, 72, 0.85), rgba(166, 63, 72, 0.85)),
                 url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600') center/cover;
     display: flex;
     align-items: center;
@@ -355,7 +355,7 @@
 }
 
 .faq-question:hover {
-    background: rgba(26, 58, 82, 0.05);
+    background: rgba(166, 63, 72, 0.05);
 }
 
 .faq-question::after {
@@ -432,7 +432,7 @@
 }
 
 .btn-primary:hover {
-    background: #c19b2a;
+    background: #8a3540;
     transform: translateY(-2px);
 }
 

@@ -2,12 +2,12 @@
    VARIABLES Y RESET
    =================================== */
 :root {
-    --primary-color: #1a3a52;
-    --secondary-color: #2c5f7f;
-    --accent-color: #d4af37;
-    --text-dark: #2c3e50;
-    --text-light: #6c757d;
-    --background-light: #f8f9fa;
+    --primary-color: #A63F48;
+    --secondary-color: #A63F3F;
+    --accent-color: #A63F48;
+    --text-dark: #0D0D0D;
+    --text-light: #A6A6A6;
+    --background-light: #F2F2F2;
     --white: #ffffff;
     --border-color: #e0e0e0;
     --shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -116,7 +116,7 @@ a {
 .hero {
     position: relative;
     height: 600px;
-    background: linear-gradient(rgba(26, 58, 82, 0.8), rgba(26, 58, 82, 0.8)),
+    background: linear-gradient(rgba(166, 63, 72, 0.8), rgba(166, 63, 63, 0.8)),
                 url('wallpaper.png') center/cover;
     display: flex;
     align-items: center;
@@ -151,13 +151,13 @@ a {
     font-weight: 600;
     border-radius: 5px;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 15px rgba(166, 63, 72, 0.3);
 }
 
 .cta-button:hover {
-    background: #c19b2a;
+    background: #8a3540;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 6px 20px rgba(166, 63, 72, 0.4);
 }
 
 /* ===================================
@@ -416,7 +416,7 @@ a {
 }
 
 .cta-button-secondary:hover {
-    background: #c19b2a;
+    background: #8a3540;
     transform: translateY(-2px);
 }
 

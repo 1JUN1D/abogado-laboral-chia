@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría Laboral para Empresas y Trabajadores | Abogados Especialistas Cundinamarca</title>
+    <meta name="description" content="Abogados laborales para empresas y trabajadores. Asesoría legal laboral, contratos, demandas laborales, indemnizaciones por accidente laboral y defensa de derechos. Consulta  en Cundinamarca.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+        <link rel="shortcut icon" href="../logo.webp" type="image/x-icon">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY4069J87"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4YY4069J87');
+      gtag('config', 'AW-17916037285');
+      
+      function registrarConversion() {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17916037285/G_C9CMKome8bEKWRhN9C'
+        });
+      }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-primary: #1E3A8A;
+            --color-primary-dark: #1E40AF;
+            --color-accent: #3B82F6;
+            --color-dark: #1a1a1a;
+            --color-gray: #4a4a4a;
+            --color-light-gray: #f8f8f8;
+            --color-border: #e5e5e5;
+            --color-success: #10b981;
+            --color-warning: #f59e0b;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: #ffffff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.92) 0%, rgba(59, 130, 246, 0.95) 100%);
+            z-index: 1;
+        }
+        
+        .hero-container {
+            position: relative;
+            z-index: 2;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease-out 0.3s both;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 2px solid rgba(16, 185, 129, 0.4);
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .hero-badge span {
+            font-size: 18px;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(38px, 5.5vw, 68px);
+            line-height: 1.1;
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-weight: 700;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(17px, 2vw, 22px);
+            color: rgba(255, 255, 255, 0.95);
+            margin-bottom: 40px;
+            line-height: 1.7;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .hero-cta-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 42px;
+            background: #ffffff;
+            color: var(--color-primary);
+            font-size: 17px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+            background: #f5f5f5;
+        }
+        
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 20px 42px;
+            background: transparent;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: #ffffff;
+            transform: translateY(-3px);
+        }
+        
+        /* Urgency Bar */
+        .urgency-bar {
+            background: var(--color-warning);
+            color: #ffffff;
+            padding: 16px 40px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .urgency-bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            to {
+                left: 100%;
+            }
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            padding: 80px 40px;
+            background: var(--color-dark);
+            color: #ffffff;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--color-success);
+            margin-bottom: 12px;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+        
+        /* Cases Section */
+        .cases-section {
+            padding: 120px 40px;
+            background: #ffffff;
+        }
+        
+        .cases-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            max-width: 700px;
+            margin-bottom: 70px;
+        }
+        
+        .section-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(30, 58, 138, 0.08);
+            color: var(--color-primary);
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(34px, 4.5vw, 54px);
+            line-height: 1.2;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            font-size: 18px;
+            color: var(--color-gray);
+            line-height: 1.8;
+        }
+        
+        .cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        
+        .case-card {
+            background: #ffffff;
+            border: 2px solid var(--color-border);
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .case-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        
+        .case-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px rgba(30, 58, 138, 0.12);
+        }
+        
+        .case-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .case-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.1) 0%, rgba(30, 58, 138, 0.05) 100%);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 32px;
+        }
+        
+        .case-card h3 {
+            font-family: var(--font-display);
+            font-size: 23px;
+            color: var(--color-dark);
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+        
+        .case-card p {
+            color: var(--color-gray);
+            margin-bottom: 26px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        .case-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-primary);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 15px;
+            transition: gap 0.3s ease;
+        }
+        
+        .case-link:hover {
+            gap: 14px;
+        }
+        
+        /* Process Section */
+        .process-section {
+            padding: 120px 40px;
+            background: var(--color-light-gray);
+        }
+        
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .process-step {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background: var(--color-primary);
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 20px;
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
+        }
+        
+        .process-step h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            color: var(--color-dark);
+            margin: 20px 0 14px;
+            font-weight: 600;
+        }
+        
+        .process-step p {
+            color: var(--color-gray);
+            line-height: 1.7;
+            font-size: 15px;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 40px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: #ffffff;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(34px, 4.5vw, 50px);
+            margin-bottom: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 45px;
+            opacity: 0.96;
+            line-height: 1.6;
+        }
+        
+        .btn-cta-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            padding: 24px 55px;
+            background: #ffffff;
+            color: var(--color-primary);
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+        }
+        
+        .btn-cta-large:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.35);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 68px;
+            height: 68px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse 2.5s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.12);
+            box-shadow: 0 8px 35px rgba(37, 211, 102, 0.65);
+        }
+        
+        .whatsapp-float svg {
+            width: 38px;
+            height: 38px;
+            fill: #ffffff;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 6px 25px rgba(37, 211, 102, 0.45);
+            }
+            50% {
+                box-shadow: 0 6px 35px rgba(37, 211, 102, 0.75);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+            }
+            
+            .hero-container {
+                padding: 60px 20px;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+            
+            .hero-cta-group {
+                flex-direction: column;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .urgency-bar {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
+            
+            .cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                width: 62px;
+                height: 62px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-float svg {
+                width: 34px;
+                height: 34px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✓</span> Expertos en Derecho Laboral
+                </div>
+                <h1>Asesoría Laboral para Empresas y Trabajadores</h1>
+                <p class="hero-subtitle">Abogados laborales especializados en <strong>asesoría laboral para empresas</strong>, <strong>defensa de los derechos del trabajador</strong>, <strong>contratos laborales</strong>, <strong>demandas laborales</strong> e <strong>indemnización por accidente laboral</strong>. Consulta legal gratuita en Cundinamarca.</p>
+                <div class="hero-cta-group">
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20laboral%20para%20mi%20empresa" 
+                       class="btn-primary" 
+                       onclick="registrarConversion()"
+                       target="_blank">
+                        <span>📱</span> Consulta  por WhatsApp
+                    </a>
+                    <a href="#casos" class="btn-secondary">
+                        Ver Servicios de Asesoría
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="../wallpaper2.jpeg" alt="Abogados Laborales Empresas y Trabajadores">
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Bar -->
+    <div class="urgency-bar">
+        ⚖️ Asesoría inmediata para empresas y trabajadores. Defensa de derechos laborales, indemnizaciones y demandas. Actúa ahora.
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">+20</div>
+                    <div class="stat-label">Años de Experiencia Laboral</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Casos Exitosos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">+500</div>
+                    <div class="stat-label">Clientes Empresariales</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Asesoría Legal Disponible</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section class="cases-section" id="casos">
+        <div class="cases-container">
+            <div class="section-header">
+                <span class="section-label">Servicios de Asesoría Laboral</span>
+                <h2 class="section-title">Asesoría Legal Laboral para Empresas y Trabajadores</h2>
+                <p class="section-description">Ofrecemos <strong>asesoría laboral para empresas</strong>, <strong>abogados para trabajadores</strong>, <strong>defensa de derechos laborales</strong>, <strong>demandas</strong> e <strong>indemnizaciones por accidente laboral</strong>. Consultoría legal completa.</p>
+            </div>
+
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-icon">🏢</div>
+                    <h3>Asesoría Laboral para Empresas</h3>
+                    <p><strong>Asesoría laboral para empresas</strong> y <strong>derecho laboral para empresas</strong>. Contratos laborales, manejo de personal, auditorías y cumplimiento normativo. <strong>Asesoramiento jurídico para empresas</strong>.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20laboral%20para%20mi%20empresa" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Consultar ahora →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">⚖️</div>
+                    <h3>Abogados para Demandas Laborales</h3>
+                    <p>Si <strong>necesito abogado para demanda laboral</strong>, somos especialistas en <strong>abogados para demandar empresas</strong> y <strong>defensa de los derechos de los trabajadores</strong>. Representación judicial completa.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20abogado%20para%20demanda%20laboral" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Evaluar mi caso →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">📝</div>
+                    <h3>Asesoría en Contratos Laborales</h3>
+                    <p><strong>Asesoría contratos laborales</strong> y <strong>consultoría jurídica laboral</strong>. Redacción, revisión y negociación de contratos de trabajo. <strong>Asesoría legal trabajo</strong> para empresas y empleados.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20en%20contratos%20laborales" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Solicitar revisión →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">🛡️</div>
+                    <h3>Defensa de los Derechos del Trabajador</h3>
+                    <p><strong>Defensa de los derechos del trabajador</strong>, <strong>defensa de los derechos laborales</strong> y <strong>defensa de los trabajadores</strong>. Asesoría legal integral para proteger tus derechos laborales.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20defensa%20de%20derechos%20laborales" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Hablar con abogado →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">💼</div>
+                    <h3>Indemnización por Accidente Laboral</h3>
+                    <p><strong>Derecho indemnizacion por accidente laboral</strong>, <strong>cobrar indemnizacion por accidente laboral</strong> y <strong>daños y perjuicios accidente laboral</strong>. Sabemos <strong>en un accidente laboral quien paga la indemnizacion</strong>.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20indemnización%20por%20accidente%20laboral" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Calcular indemnización →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">🏥</div>
+                    <h3>Enfermedad Profesional y Pensiones</h3>
+                    <p><strong>Enfermedad profesional indemnizacion</strong> y <strong>abogados especialistas en seguridad social y pensiones</strong>. También <strong>abogados especializados en pensiones seguro social</strong> y jubilaciones.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20por%20enfermedad%20profesional" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Consultar ahora →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">👨‍⚖️</div>
+                    <h3>Abogado Laboral para Empresas y Trabajadores</h3>
+                    <p><strong>Abogado laboral para empresas</strong> y <strong>abogado laboral para trabajadores</strong>. Representación dual con enfoque especializado. <strong>Dia del abogado laboralista</strong> todos los días para nosotros.</p>
+                    <a href="https://wa.me/573015070487?text=Busco%20abogado%20laboral%20para%20mi%20empresa" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Contratar asesoría →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">🔧</div>
+                    <h3>Asesoría Legal para PYMES</h3>
+                    <p><strong>Abogados laborales para pymes</strong>, <strong>asesoría de empresa</strong> y <strong>asesoría en negocios</strong>. Soluciones legales adaptadas a pequeñas y medianas empresas en Cundinamarca.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20legal%20para%20mi%20PYME" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Asesoría PYME →</a>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">👥</div>
+                    <h3>Asesoría Legal para Trabajadores</h3>
+                    <p><strong>Asesoría legal para trabajadores</strong>, <strong>asesoría para trabajadores</strong> y <strong>abogados para los trabajadores</strong>. <strong>Busco asesoria laboral</strong> confiable y especializada.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20legal%20para%20trabajador" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="case-link">Consultar  →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process-section">
+        <div class="process-container">
+            <div class="section-header">
+                <span class="section-label">Nuestro Proceso</span>
+                <h2 class="section-title">Cómo Trabajamos en Asesoría Laboral</h2>
+                <p class="section-description">Proceso estructurado para <strong>asesoría laboral para empresas</strong> y <strong>defensa de los derechos del trabajador</strong>. Resultados garantizados.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Consulta </h3>
+                    <p>Evaluamos tu caso de <strong>asesoría laboral</strong> o <strong>demanda laboral</strong> sin costo. Análisis inicial de viabilidad.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Estrategia Legal</h3>
+                    <p>Desarrollamos plan personalizado para <strong>defensa de derechos laborales</strong> o <strong>asesoría empresarial</strong>.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Ejecución y Negociación</h3>
+                    <p>Ejecutamos la estrategia: contratos, demandas, negociaciones o <strong>indemnización por accidente laboral</strong>.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h3>Seguimiento y Resultados</h3>
+                    <p>Acompañamiento completo hasta obtener resultados en <strong>asesoría judicial administrativo</strong> o litigio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>¿Necesitas Asesoría Laboral o un Abogado para Demanda Laboral?</h2>
+            <p>Somos <strong>abogados para trabajadores</strong> y <strong>asesoría laboral para empresas</strong>. Primera consulta . Resultados garantizados.</p>
+            <a href="https://wa.me/573015070487?text=Necesito%20hablar%20urgente%20con%20abogado%20laboral" 
+               class="btn-cta-large" 
+               onclick="registrarConversion()"
+               target="_blank">
+                <span>📱</span> Hablar con Abogado Laboral AHORA
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573015070487?text=Hola,%20necesito%20asesoría%20laboral%20para%20empresa%20o%20trabajador" 
+       class="whatsapp-float" 
+       onclick="registrarConversion()"
+       target="_blank"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.802-0.890-2.082-0.992s-0.483-0.153-0.686 0.153c-0.203 0.305-0.788 0.992-0.966 1.195s-0.356 0.229-0.661 0.076c-0.305-0.153-1.288-0.475-2.453-1.513-0.907-0.808-1.520-1.806-1.697-2.111s-0.018-0.470 0.134-0.622c0.137-0.137 0.305-0.356 0.458-0.534s0.203-0.305 0.305-0.509c0.102-0.203 0.051-0.381-0.025-0.534s-0.686-1.653-0.940-2.261c-0.248-0.593-0.499-0.513-0.686-0.522-0.178-0.008-0.381-0.010-0.584-0.010s-0.534 0.076-0.813 0.381c-0.280 0.305-1.067 1.043-1.067 2.543s1.093 2.951 1.245 3.154c0.153 0.203 2.146 3.278 5.199 4.596 0.726 0.313 1.293 0.500 1.734 0.640 0.729 0.232 1.392 0.199 1.916 0.121 0.584-0.087 1.802-0.737 2.056-1.447s0.254-1.320 0.178-1.447c-0.076-0.127-0.280-0.203-0.584-0.356z"/>
+        </svg>
+    </a>
+</body>
+</html>

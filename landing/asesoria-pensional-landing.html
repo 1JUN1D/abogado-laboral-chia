@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoría Pensional Experta | Abogados Especialistas en Cundinamarca</title>
+    <meta name="description" content="Abogados especialistas en pensiones. Asesoría Colpensiones, Colfondos y Porvenir en Cundinamarca. Primera consulta .">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YY4069J87"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-4YY4069J87');
+      gtag('config', 'AW-17916037285');
+      
+      function registrarConversion() {
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17916037285/G_C9CMKome8bEKWRhN9C'
+        });
+      }
+    </script>
+  
+      <link rel="shortcut icon" href="../logo.webp" type="image/x-icon">
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --color-primary: #A63F48;
+            --color-primary-dark: #8a3540;
+            --color-accent: #A63F3F;
+            --color-dark: #1a1a1a;
+            --color-gray: #4a4a4a;
+            --color-light-gray: #f8f8f8;
+            --color-border: #e5e5e5;
+            --font-display: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: #ffffff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            overflow: hidden;
+        }
+        
+        .hero-container {
+            position: relative;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 40px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        
+        .hero-content {
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .hero-image {
+            position: relative;
+            animation: fadeInRight 1s ease-out 0.3s both;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero-badge {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(42px, 6vw, 72px);
+            line-height: 1.1;
+            color: #ffffff;
+            margin-bottom: 30px;
+            font-weight: 700;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(18px, 2vw, 24px);
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 40px;
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .hero-cta-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: #ffffff;
+            color: var(--color-primary);
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+            background: #f5f5f5;
+        }
+        
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 18px 40px;
+            background: transparent;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #ffffff;
+            transform: translateY(-2px);
+        }
+        
+        /* Trust Section */
+        .trust-section {
+            padding: 80px 40px;
+            background: var(--color-light-gray);
+            text-align: center;
+        }
+        
+        .trust-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .trust-item {
+            text-align: center;
+        }
+        
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+        
+        .trust-label {
+            font-size: 16px;
+            color: var(--color-gray);
+            font-weight: 500;
+        }
+        
+        /* Services Section */
+        .services-section {
+            padding: 120px 40px;
+            background: #ffffff;
+        }
+        
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            max-width: 700px;
+            margin-bottom: 80px;
+        }
+        
+        .section-label {
+            display: inline-block;
+            padding: 6px 18px;
+            background: rgba(166, 63, 72, 0.1);
+            color: var(--color-primary);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+        
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 56px);
+            line-height: 1.2;
+            color: var(--color-dark);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .section-description {
+            font-size: 18px;
+            color: var(--color-gray);
+            line-height: 1.8;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: #ffffff;
+            border: 2px solid var(--color-border);
+            border-radius: 16px;
+            padding: 40px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+        
+        .service-card:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(166, 63, 72, 0.15);
+        }
+        
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, rgba(166, 63, 72, 0.1) 0%, rgba(166, 63, 72, 0.05) 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            font-size: 28px;
+        }
+        
+        .service-card h3 {
+            font-family: var(--font-display);
+            font-size: 24px;
+            color: var(--color-dark);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .service-card p {
+            color: var(--color-gray);
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+        
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            transition: gap 0.3s ease;
+        }
+        
+        .service-link:hover {
+            gap: 12px;
+        }
+        
+        /* Why Choose Section */
+        .why-section {
+            padding: 120px 40px;
+            background: var(--color-dark);
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .why-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(166, 63, 72, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .why-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+        
+        .why-item {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .why-item:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+        
+        .why-icon {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .why-item h3 {
+            font-family: var(--font-display);
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .why-item p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.7;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 40px;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            color: #ffffff;
+            text-align: center;
+        }
+        
+        .cta-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .cta-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(36px, 5vw, 52px);
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        
+        .cta-section p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+        
+        .btn-cta-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 22px 50px;
+            background: #ffffff;
+            color: var(--color-primary);
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-cta-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 65px;
+            height: 65px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+        }
+        
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+            fill: #ffffff;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+            }
+            50% {
+                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+            }
+            
+            .hero-container {
+                padding: 60px 20px;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .hero-image {
+                order: -1;
+            }
+            
+            .hero-cta-group {
+                flex-direction: column;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+            
+            .section-header {
+                text-align: center;
+            }
+            
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+            }
+            
+            .whatsapp-float svg {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">✓ Abogados Certificados · Cundinamarca</div>
+                <h1>Asesoría Pensional Experta para Garantizar tus Derechos</h1>
+                <p class="hero-subtitle">Especialistas en Colpensiones, Colfondos y Porvenir. Más de 15 años defendiendo derechos pensionales en Bogotá y toda Cundinamarca.</p>
+                <div class="hero-cta-group">
+                    <a href="https://wa.me/573015070487?text=Hola,%20necesito%20asesoría%20pensional%20en%20Cundinamarca" 
+                       class="btn-primary" 
+                       onclick="registrarConversion()"
+                       target="_blank">
+                        <span>📱</span> Consulta  por WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn-secondary">
+                        Ver Servicios
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="../wallpaper2.jpeg" alt="Asesoría Pensional Profesional - Abogados Especialistas">
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-number">+15</div>
+                    <div class="trust-label">Años de Experiencia</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">+500</div>
+                    <div class="trust-label">Casos Exitosos</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">92%</div>
+                    <div class="trust-label">Tasa de Éxito</div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-number">24/7</div>
+                    <div class="trust-label">Atención Virtual</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="servicios">
+        <div class="services-container">
+            <div class="section-header">
+                <span class="section-label">Nuestros Servicios</span>
+                <h2 class="section-title">Asesoría Integral en Pensiones y Jubilaciones</h2>
+                <p class="section-description">Abogados especialistas en pensiones con experiencia comprobada en Colpensiones, Colfondos y Porvenir. Te acompañamos en cada paso del proceso.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏛️</div>
+                    <h3>Asesoría Colpensiones</h3>
+                    <p>Expertos en trámites ante Colpensiones. Validación de semanas, bono pensional, historia laboral y segunda asesoría. Atención virtual y presencial en Cundinamarca.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20para%20Colpensiones" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Consultar ahora →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Abogados Especialistas en Pensiones</h3>
+                    <p>Litigios pensionales, defensa de derechos vulnerados y representación legal ante entidades. Especialistas en jubilaciones y pensiones de vejez, invalidez y sobrevivientes.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20un%20abogado%20para%20mi%20pensión" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Hablar con abogado →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Asesoría Colfondos y Cambio de Fondos</h3>
+                    <p>Evaluación y asesoría para cambio de fondo de pensiones. Análisis comparativo entre AFP, traslados y optimización de ahorro pensional.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20sobre%20Colfondos" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Más información →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Asesoría Pensional Porvenir</h3>
+                    <p>Trámites en Porvenir: retiro de cesantías, devolución de saldos, modalidades de pensión, retiro programado y renta vitalicia.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20sobre%20Porvenir" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Consultar →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏥</div>
+                    <h3>Pensiones de Invalidez</h3>
+                    <p>Abogados especialistas en pensiones de invalidez. Calificación PCL, apelaciones ante juntas, pensiones de incapacidad y litigios con ARL.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20asesoría%20sobre%20pensión%20de%20invalidez" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Revisar mi caso →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Trámites Jubilatorios</h3>
+                    <p>Gestión completa de jubilación: revisión de requisitos, documentación, radicación y seguimiento. Asesoría previsional para planificar tu retiro.</p>
+                    <a href="https://wa.me/573015070487?text=Necesito%20ayuda%20con%20mi%20trámite%20de%20jubilación" 
+                       onclick="registrarConversion()"
+                       target="_blank"
+                       class="service-link">Iniciar trámite →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-section">
+        <div class="why-container">
+            <div class="section-header">
+                <span class="section-label" style="background: rgba(255,255,255,0.1); color: #ffffff;">¿Por qué elegirnos?</span>
+                <h2 class="section-title" style="color: #ffffff;">La Experiencia que Necesitas para Asegurar tu Pensión</h2>
+                <p class="section-description" style="color: rgba(255,255,255,0.8);">Somos asesores de pensiones con trayectoria comprobada en casos complejos. Defendemos tus derechos pensionales con dedicación y profesionalismo.</p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">✓</div>
+                    <h3>Experiencia Comprobada</h3>
+                    <p>Más de 15 años como abogados pensionales. Conocemos a fondo Colpensiones, Colfondos y Porvenir.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">🎯</div>
+                    <h3>Alta Tasa de Éxito</h3>
+                    <p>92% de casos favorables. Especialistas en pensiones con resultados documentados.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">💻</div>
+                    <h3>Atención Virtual</h3>
+                    <p>Colpensiones asesoría virtual en toda Cundinamarca. Consultas por WhatsApp, videollamada o presencial.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">💰</div>
+                    <h3>Primera Consulta </h3>
+                    <p>Evaluamos tu caso sin costo. Honorarios transparentes basados en resultados.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">📍</div>
+                    <h3>Cobertura Regional</h3>
+                    <p>Atendemos Bogotá, Soacha, Facatativá, Zipaquirá, Chía, Fusagasugá y toda Cundinamarca.</p>
+                </div>
+
+                <div class="why-item">
+                    <div class="why-icon">⚡</div>
+                    <h3>Respuesta Inmediata</h3>
+                    <p>Contestamos en menos de 2 horas. Disponible lunes a sábado para atención prioritaria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>¿Necesitas Resolver tu Situación Pensional?</h2>
+            <p>Habla ahora con nuestros abogados especialistas. Primera consulta completamente .</p>
+            <a href="https://wa.me/573015070487?text=Hola,%20necesito%20asesoría%20pensional%20urgente" 
+               class="btn-cta-large" 
+               onclick="registrarConversion()"
+               target="_blank">
+                <span>📱</span> Contactar por WhatsApp Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/573015070487?text=Hola,%20necesito%20información%20sobre%20asesoría%20pensional" 
+       class="whatsapp-float" 
+       onclick="registrarConversion()"
+       target="_blank"
+       aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.802-0.890-2.082-0.992s-0.483-0.153-0.686 0.153c-0.203 0.305-0.788 0.992-0.966 1.195s-0.356 0.229-0.661 0.076c-0.305-0.153-1.288-0.475-2.453-1.513-0.907-0.808-1.520-1.806-1.697-2.111s-0.018-0.470 0.134-0.622c0.137-0.137 0.305-0.356 0.458-0.534s0.203-0.305 0.305-0.509c0.102-0.203 0.051-0.381-0.025-0.534s-0.686-1.653-0.940-2.261c-0.248-0.593-0.499-0.513-0.686-0.522-0.178-0.008-0.381-0.010-0.584-0.010s-0.534 0.076-0.813 0.381c-0.280 0.305-1.067 1.043-1.067 2.543s1.093 2.951 1.245 3.154c0.153 0.203 2.146 3.278 5.199 4.596 0.726 0.313 1.293 0.500 1.734 0.640 0.729 0.232 1.392 0.199 1.916 0.121 0.584-0.087 1.802-0.737 2.056-1.447s0.254-1.320 0.178-1.447c-0.076-0.127-0.280-0.203-0.584-0.356z"/>
+        </svg>
+    </a>
+</body>
+</html>

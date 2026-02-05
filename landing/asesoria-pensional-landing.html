@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asesoría Pensional Experta | Abogados Especialistas en Cundinamarca</title>
-    <meta name="description" content="Abogados especialistas en pensiones. Asesoría Colpensiones, Colfondos y Porvenir en Cundinamarca. Primera consulta .">
+    <meta name="description" content="Abogados especialistas en pensiones. Asesoría Colpensiones, Colfondos y Porvenir en Cundinamarca. Primera consulta.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,8 +27,7 @@
       }
     </script>
   
-      <link rel="shortcut icon" href="../logo.webp" type="image/x-icon">
-
+    <link rel="shortcut icon" href="../logo.webp" type="image/x-icon">
 
     <style>
         * {
@@ -55,6 +54,235 @@
             line-height: 1.6;
             overflow-x: hidden;
             background: #ffffff;
+        }
+        
+        /* Flyer Emergente de Oferta */
+        .offer-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.7);
+            background: linear-gradient(135deg, #A63F48 0%, #8a3540 100%);
+            border-radius: 20px;
+            padding: 0;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.4);
+            z-index: 10000;
+            width: 90%;
+            max-width: 420px;
+            max-height: 85vh;
+            opacity: 0;
+            animation: popupAppear 0.5s ease-out forwards;
+            overflow-y: auto;
+        }
+        
+        @keyframes popupAppear {
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+        
+        @keyframes popupDisappear {
+            to {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.8);
+            }
+        }
+        
+        .offer-popup.closing {
+            animation: popupDisappear 0.4s ease-out forwards;
+        }
+        
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            opacity: 0;
+            animation: overlayAppear 0.3s ease-out forwards;
+        }
+        
+        @keyframes overlayAppear {
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .popup-overlay.closing {
+            animation: overlayDisappear 0.3s ease-out forwards;
+        }
+        
+        @keyframes overlayDisappear {
+            to {
+                opacity: 0;
+            }
+        }
+        
+        .popup-header {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.05) 100%);
+            padding: 18px 24px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-size: 22px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .popup-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+        
+        .popup-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f59e0b;
+            color: #ffffff;
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+        }
+        
+        .popup-title {
+            font-family: var(--font-display);
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 6px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .popup-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 15px;
+        }
+        
+        .popup-content {
+            padding: 24px 24px 20px;
+        }
+        
+        .price-cards {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .price-card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 14px;
+            padding: 18px 20px;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .price-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b 0%, #ea580c 100%);
+        }
+        
+        .price-type {
+            font-weight: 700;
+            color: var(--color-primary);
+            font-size: 15px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .price-amount {
+            font-family: var(--font-display);
+            font-size: 34px;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 4px;
+            line-height: 1;
+        }
+        
+        .price-period {
+            color: var(--color-gray);
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .price-features {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .price-features li {
+            color: var(--color-gray);
+            font-size: 13px;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .price-features li::before {
+            content: '✓';
+            color: #10b981;
+            font-weight: 700;
+        }
+        
+        .popup-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 15px 26px;
+            background: #ffffff;
+            color: var(--color-primary);
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .popup-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+        }
+        
+        .popup-timer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
+            margin-top: 12px;
         }
         
         /* Hero Section */
@@ -235,6 +463,187 @@
             font-size: 16px;
             color: var(--color-gray);
             font-weight: 500;
+        }
+        
+        /* Pricing Section */
+        .pricing-section {
+            padding: 100px 40px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .pricing-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .pricing-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #f59e0b;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+        
+        .pricing-title {
+            font-family: var(--font-display);
+            font-size: clamp(34px, 4.5vw, 50px);
+            color: var(--color-dark);
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+        
+        .pricing-subtitle {
+            font-size: 18px;
+            color: var(--color-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+        
+        .pricing-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 45px 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid transparent;
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-accent) 100%);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(166, 63, 72, 0.15);
+            border-color: var(--color-primary);
+        }
+        
+        .pricing-card.featured {
+            border-color: #f59e0b;
+            box-shadow: 0 15px 50px rgba(245, 158, 11, 0.2);
+        }
+        
+        .pricing-card.featured::before {
+            background: linear-gradient(90deg, #f59e0b 0%, #ea580c 100%);
+        }
+        
+        .featured-badge {
+            position: absolute;
+            top: 25px;
+            right: -35px;
+            background: #f59e0b;
+            color: #ffffff;
+            padding: 6px 45px;
+            font-size: 12px;
+            font-weight: 700;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 10px rgba(245, 158, 11, 0.3);
+        }
+        
+        .pricing-type {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--color-primary);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .pricing-amount {
+            font-family: var(--font-display);
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--color-dark);
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+        
+        .pricing-period {
+            color: var(--color-gray);
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+        
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 35px;
+        }
+        
+        .pricing-features li {
+            color: var(--color-gray);
+            padding: 12px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        
+        .pricing-features li::before {
+            content: '✓';
+            color: #10b981;
+            font-weight: 700;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+        
+        .pricing-cta {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px 30px;
+            background: var(--color-primary);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-cta:hover {
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(166, 63, 72, 0.3);
+        }
+        
+        .pricing-card.featured .pricing-cta {
+            background: #f59e0b;
+        }
+        
+        .pricing-card.featured .pricing-cta:hover {
+            background: #ea580c;
         }
         
         /* Services Section */
@@ -547,6 +956,10 @@
                 text-align: center;
             }
             
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
             .why-grid {
                 grid-template-columns: 1fr;
             }
@@ -562,10 +975,99 @@
                 width: 30px;
                 height: 30px;
             }
+            
+            .offer-popup {
+                max-width: 95%;
+                max-height: 90vh;
+            }
+            
+            .popup-header {
+                padding: 16px 20px;
+            }
+            
+            .popup-content {
+                padding: 20px 20px 16px;
+            }
+            
+            .popup-title {
+                font-size: 20px;
+            }
+            
+            .price-amount {
+                font-size: 30px;
+            }
+            
+            .price-features li {
+                font-size: 12px;
+                padding: 3px 0;
+            }
+            
+            .popup-cta {
+                padding: 14px 20px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
 <body>
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+    
+    <!-- Offer Popup -->
+    <div class="offer-popup" id="offerPopup">
+        <div class="popup-header">
+            <button class="popup-close" onclick="closePopup()" aria-label="Cerrar">×</button>
+            <div class="popup-badge">
+                🔥 OFERTA LIMITADA
+            </div>
+            <h2 class="popup-title">¡Promoción Especial de Asesoría!</h2>
+            <p class="popup-subtitle">Válido solo por este mes</p>
+        </div>
+        
+        <div class="popup-content">
+            <div class="price-cards">
+                <div class="price-card">
+                    <div class="price-type">
+                        💻 Asesoría Virtual
+                    </div>
+                    <div class="price-amount">$50.000</div>
+                    <div class="price-period">Por consulta</div>
+                    <ul class="price-features">
+                        <li>Consulta por videollamada</li>
+                        <li>Análisis de tu caso</li>
+                        <li>Recomendaciones legales</li>
+                        <li>Seguimiento vía WhatsApp</li>
+                    </ul>
+                </div>
+                
+                <div class="price-card">
+                    <div class="price-type">
+                        🏢 Asesoría Presencial
+                    </div>
+                    <div class="price-amount">$120.000</div>
+                    <div class="price-period">Por consulta</div>
+                    <ul class="price-features">
+                        <li>Reunión en oficina</li>
+                        <li>Revisión de documentos</li>
+                        <li>Estrategia personalizada</li>
+                        <li>Plan de acción detallado</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/573015070487?text=Quiero%20aprovechar%20la%20oferta%20especial%20de%20asesoría%20pensional" 
+               class="popup-cta" 
+               onclick="registrarConversion(); closePopup();"
+               target="_blank">
+                <span>📱</span> Agendar Asesoría con Descuento
+            </a>
+            
+            <div class="popup-timer">
+                Esta ventana se cerrará automáticamente en <span id="countdown">4</span> segundos
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-container">
@@ -578,10 +1080,10 @@
                        class="btn-primary" 
                        onclick="registrarConversion()"
                        target="_blank">
-                        <span>📱</span> Consulta  por WhatsApp
+                        <span>📱</span> Consulta por WhatsApp
                     </a>
-                    <a href="#servicios" class="btn-secondary">
-                        Ver Servicios
+                    <a href="#precios" class="btn-secondary">
+                        Ver Precios Especiales
                     </a>
                 </div>
             </div>
@@ -611,6 +1113,61 @@
                 <div class="trust-item">
                     <div class="trust-number">24/7</div>
                     <div class="trust-label">Atención Virtual</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section" id="precios">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <div class="pricing-badge">
+                    🔥 OFERTA ESPECIAL DEL MES
+                </div>
+                <h2 class="pricing-title">Precios de Asesoría Pensional</h2>
+                <p class="pricing-subtitle">Asesoría profesional a precios accesibles. Promoción válida solo este mes.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-type">💻 Virtual</div>
+                    <div class="pricing-amount">$50.000</div>
+                    <div class="pricing-period">Por consulta</div>
+                    <ul class="pricing-features">
+                        <li>Consulta por videollamada</li>
+                        <li>Análisis completo de tu caso</li>
+                        <li>Recomendaciones legales inmediatas</li>
+                        <li>Envío de documentos por email</li>
+                        <li>Seguimiento vía WhatsApp</li>
+                    </ul>
+                    <a href="https://wa.me/573015070487?text=Quiero%20agendar%20asesoría%20pensional%20virtual%20a%2050mil" 
+                       class="pricing-cta"
+                       onclick="registrarConversion()"
+                       target="_blank">
+                        <span>📱</span> Agendar Asesoría Virtual
+                    </a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="featured-badge">MÁS POPULAR</div>
+                    <div class="pricing-type">🏢 Presencial</div>
+                    <div class="pricing-amount">$120.000</div>
+                    <div class="pricing-period">Por consulta</div>
+                    <ul class="pricing-features">
+                        <li>Reunión en nuestra oficina</li>
+                        <li>Revisión exhaustiva de documentos</li>
+                        <li>Estrategia legal personalizada</li>
+                        <li>Plan de acción detallado</li>
+                        <li>Orientación sobre próximos pasos</li>
+                        <li>Soporte post-consulta</li>
+                    </ul>
+                    <a href="https://wa.me/573015070487?text=Quiero%20agendar%20asesoría%20pensional%20presencial%20a%20120mil" 
+                       class="pricing-cta"
+                       onclick="registrarConversion()"
+                       target="_blank">
+                        <span>📍</span> Agendar Asesoría Presencial
+                    </a>
                 </div>
             </div>
         </div>
@@ -719,7 +1276,7 @@
 
                 <div class="why-item">
                     <div class="why-icon">💰</div>
-                    <h3>Primera Consulta </h3>
+                    <h3>Primera Consulta</h3>
                     <p>Evaluamos tu caso sin costo. Honorarios transparentes basados en resultados.</p>
                 </div>
 
@@ -742,7 +1299,7 @@
     <section class="cta-section">
         <div class="cta-container">
             <h2>¿Necesitas Resolver tu Situación Pensional?</h2>
-            <p>Habla ahora con nuestros abogados especialistas. Primera consulta completamente .</p>
+            <p>Habla ahora con nuestros abogados especialistas. Primera consulta completamente.</p>
             <a href="https://wa.me/573015070487?text=Hola,%20necesito%20asesoría%20pensional%20urgente" 
                class="btn-cta-large" 
                onclick="registrarConversion()"
@@ -762,5 +1319,36 @@
             <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.923 0-7.435 6.050-13.485 13.485-13.485s13.485 6.050 13.485 13.485c0 7.435-6.050 13.485-13.485 13.485zM21.960 18.828c-0.305-0.153-1.802-0.890-2.082-0.992s-0.483-0.153-0.686 0.153c-0.203 0.305-0.788 0.992-0.966 1.195s-0.356 0.229-0.661 0.076c-0.305-0.153-1.288-0.475-2.453-1.513-0.907-0.808-1.520-1.806-1.697-2.111s-0.018-0.470 0.134-0.622c0.137-0.137 0.305-0.356 0.458-0.534s0.203-0.305 0.305-0.509c0.102-0.203 0.051-0.381-0.025-0.534s-0.686-1.653-0.940-2.261c-0.248-0.593-0.499-0.513-0.686-0.522-0.178-0.008-0.381-0.010-0.584-0.010s-0.534 0.076-0.813 0.381c-0.280 0.305-1.067 1.043-1.067 2.543s1.093 2.951 1.245 3.154c0.153 0.203 2.146 3.278 5.199 4.596 0.726 0.313 1.293 0.500 1.734 0.640 0.729 0.232 1.392 0.199 1.916 0.121 0.584-0.087 1.802-0.737 2.056-1.447s0.254-1.320 0.178-1.447c-0.076-0.127-0.280-0.203-0.584-0.356z"/>
         </svg>
     </a>
+
+    <script>
+        // Popup auto-close functionality
+        let countdown = 4;
+        const countdownElement = document.getElementById('countdown');
+        const popup = document.getElementById('offerPopup');
+        const overlay = document.getElementById('popupOverlay');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown === 0) {
+                clearInterval(timer);
+                closePopup();
+            }
+        }, 1000);
+        
+        function closePopup() {
+            popup.classList.add('closing');
+            overlay.classList.add('closing');
+            
+            setTimeout(() => {
+                popup.style.display = 'none';
+                overlay.style.display = 'none';
+            }, 400);
+        }
+        
+        // Close popup when clicking overlay
+        overlay.addEventListener('click', closePopup);
+    </script>
 </body>
 </html>

@@ -16,6 +16,32 @@
 <link rel="preload" href="/inmobiliario/assets/tex/grafito-hero-2000.webp" as="image" media="(min-width: 1024px)">
 <link rel="preload" href="/inmobiliario/assets/tex/grafito-hero-1280.webp" as="image" media="(min-width: 760px) and (max-width: 1023px)">
 <link rel="preload" href="/inmobiliario/assets/tex/grafito-hero-port-720.webp" as="image" media="(max-width: 759px)">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17916037285"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-17916037285');
+</script>
+<!-- Event snippet for Inmobiliario_WhatsApp_29OCT conversion page: una sola funcion para todos los botones de WhatsApp -->
+<script>
+  function contactoWhatsApp(el) {
+    var url = (typeof el === 'string') ? el : el.href;
+    var abierto = false;
+    var abrir = function () {
+      if (abierto) return;
+      abierto = true;
+      var w = window.open(url, '_blank');
+      if (w) { w.opener = null; } else { location.href = url; }
+    };
+    try {
+      gtag('event', 'conversion', {'send_to': 'AW-17916037285/4gruCIS3sq4dEKWRhN9C', 'event_callback': abrir});
+    } catch (e) {}
+    setTimeout(abrir, 800);
+    return false;
+  }
+</script>
 <link rel="stylesheet" href="/inmobiliario/assets/css/site.css">
 <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.__site)document.documentElement.classList.remove('js')},2500)</script>
 <script type="application/ld+json">
@@ -53,7 +79,7 @@
       <a href="#proceso">Proceso</a>
       <a href="#preguntas">Preguntas</a>
     </nav>
-    <a class="btn btn--accent btn--sm" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>
+    <a class="btn btn--accent btn--sm" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">
       <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
   </div>
 </header>
@@ -87,7 +113,7 @@
   <div class="folio__grid">
     <div class="folio__side">
       <div class="folio__act">
-        <a class="btn btn--ink" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>
+        <a class="btn btn--ink" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
         <p class="folio__where">Centro Comercial Santafé, Calle 185 No.&nbsp;45-03, Zona Met, pisos 4 y 5, Bogotá D.C., 111711, y oficina en Chía. Con cita, en persona o por videollamada.</p>
         <p class="folio__where-short">Centro Comercial Santafé, Calle 185 No.&nbsp;45-03, Zona Met, pisos 4 y 5, Bogotá D.C., 111711, y oficina en Chía.</p>
@@ -180,7 +206,7 @@
         <div class="card__body">
         <h3 class="card__title">Reclamaciones ante constructoras y fiduciarias</h3>
         <p class="card__text">Atrasos, cambios en lo prometido, devolución de dineros y penalidades, reclamados por escrito.</p>
-        <p class="card__foot"><span>Constructoras y fiduciarias</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20una%20reclamaci%C3%B3n%20ante%20una%20constructora%20o%20una%20fiduciaria." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Constructoras y fiduciarias</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20una%20reclamaci%C3%B3n%20ante%20una%20constructora%20o%20una%20fiduciaria." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
       <li class="card card--b">
@@ -188,7 +214,7 @@
         <div class="card__body">
         <h3 class="card__title">Contratos sobre inmuebles</h3>
         <p class="card__text">Promesas, compraventas, arriendos y escrituras, revisados o redactados antes de firmar.</p>
-        <p class="card__foot"><span>Prevención</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20la%20revisi%C3%B3n%20o%20elaboraci%C3%B3n%20de%20un%20contrato." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Prevención</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20la%20revisi%C3%B3n%20o%20elaboraci%C3%B3n%20de%20un%20contrato." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
       <li class="card card--c">
@@ -196,7 +222,7 @@
         <div class="card__body">
         <h3 class="card__title">Pertenencias y reivindicatorios</h3>
         <p class="card__text">Conflictos de predios: el poseedor que pide ser declarado dueño o el propietario que recupera su inmueble.</p>
-        <p class="card__foot"><span>Propietarios y poseedores</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20un%20conflicto%20de%20predios." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Propietarios y poseedores</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20un%20conflicto%20de%20predios." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
       <li class="card card--a">
@@ -204,7 +230,7 @@
         <div class="card__body">
         <h3 class="card__title">Restitución de inmuebles arrendados</h3>
         <p class="card__text">Recuperar su inmueble cuando el arrendatario incumple o deja de pagar el canon.</p>
-        <p class="card__foot"><span>Arrendadores</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20la%20restituci%C3%B3n%20de%20un%20inmueble%20arrendado." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Arrendadores</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20la%20restituci%C3%B3n%20de%20un%20inmueble%20arrendado." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
       <li class="card card--b">
@@ -212,7 +238,7 @@
         <div class="card__body">
         <h3 class="card__title">Servidumbres</h3>
         <p class="card__text">Constituir, defender o terminar servidumbres de paso, acueducto y otras sobre un predio.</p>
-        <p class="card__foot"><span>Propietarios de predios</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20una%20servidumbre." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Propietarios de predios</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20una%20servidumbre." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
       <li class="card card--c">
@@ -220,11 +246,11 @@
         <div class="card__body">
         <h3 class="card__title">Representación judicial</h3>
         <p class="card__text">Defensa de propietarios y poseedores ante los jueces, para personas y empresas.</p>
-        <p class="card__foot"><span>Personas y empresas</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20representaci%C3%B3n%20judicial." data-wa>Consultar este caso</a></p>
+        <p class="card__foot"><span>Personas y empresas</span><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20consultar%20sobre%20representaci%C3%B3n%20judicial." data-wa onclick="return contactoWhatsApp(this)">Consultar este caso</a></p>
         </div>
       </li>
     </ul>
-    <p class="casos__more">Seis frentes de trabajo, de forma preventiva o con el conflicto ya iniciado. Si su caso es otro, <a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>cuéntelo por WhatsApp</a>.</p>
+    <p class="casos__more">Seis frentes de trabajo, de forma preventiva o con el conflicto ya iniciado. Si su caso es otro, <a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">cuéntelo por WhatsApp</a>.</p>
   </div>
 </section>
 
@@ -235,11 +261,11 @@
       <div class="menu__group">
         <h3 class="menu__group-name">Prevenir</h3>
         <ul class="menu__list">
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Necesito%20asesor%C3%ADa%20en%20un%20negocio%20inmobiliario." data-wa data-preview="/inmobiliario/assets/img/servicio-asesoria-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Necesito%20asesor%C3%ADa%20en%20un%20negocio%20inmobiliario." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-asesoria-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-asesoria-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Asesoría en negocios inmobiliarios</span><span class="row__value">Negociación</span>
             <span class="row__desc">Comprar, vender o arrendar vivienda, locales y lotes con un abogado al lado.</span></a></li>
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20que%20revise%20o%20elabore%20un%20contrato." data-wa data-preview="/inmobiliario/assets/img/servicio-revision-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20que%20revise%20o%20elabore%20un%20contrato." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-revision-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-revision-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Revisión y elaboración de contratos</span><span class="row__value">Contratos</span>
             <span class="row__desc">Promesas, compraventas, arriendos y escrituras, antes de firmar.</span></a></li>
@@ -248,11 +274,11 @@
       <div class="menu__group">
         <h3 class="menu__group-name">Reclamar</h3>
         <ul class="menu__list">
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20problema%20con%20una%20fiduciaria." data-wa data-preview="/inmobiliario/assets/img/servicio-fiduciaria-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20problema%20con%20una%20fiduciaria." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-fiduciaria-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-fiduciaria-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Consumidor financiero ante fiduciarias</span><span class="row__value">Fiduciarias</span>
             <span class="row__desc">Devolución de dineros y descuentos del encargo fiduciario.</span></a></li>
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20problema%20con%20una%20constructora." data-wa data-preview="/inmobiliario/assets/img/servicio-constructora-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20problema%20con%20una%20constructora." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-constructora-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-constructora-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Consumidor ante constructoras</span><span class="row__value">Constructoras</span>
             <span class="row__desc">Atrasos, cambios en lo prometido y garantía de la vivienda nueva.</span></a></li>
@@ -261,11 +287,11 @@
       <div class="menu__group">
         <h3 class="menu__group-name">En el juzgado</h3>
         <ul class="menu__list">
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20conflicto%20de%20predios%20o%20de%20un%20inmueble%20arrendado." data-wa data-preview="/inmobiliario/assets/img/servicio-predios-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Tengo%20un%20conflicto%20de%20predios%20o%20de%20un%20inmueble%20arrendado." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-predios-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-predios-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Conflictos de predios y arriendos</span><span class="row__value">Predios</span>
             <span class="row__desc">Pertenencias, reivindicatorios, servidumbres y restitución de inmuebles arrendados.</span></a></li>
-          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Necesito%20representaci%C3%B3n%20en%20un%20proceso%20judicial%20inmobiliario." data-wa data-preview="/inmobiliario/assets/img/servicio-judicial-960.webp">
+          <li><a class="row" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Necesito%20representaci%C3%B3n%20en%20un%20proceso%20judicial%20inmobiliario." data-wa onclick="return contactoWhatsApp(this)" data-preview="/inmobiliario/assets/img/servicio-judicial-960.webp">
             <img class="row__thumb" src="/inmobiliario/assets/img/servicio-judicial-480.webp" alt="" width="480" height="360" loading="lazy" decoding="async">
             <span class="row__name">Procesos del consumidor inmobiliario</span><span class="row__value">Consumidor</span>
             <span class="row__desc">Demandas para exigir cumplimiento, devolución o indemnización.</span></a></li>
@@ -323,7 +349,7 @@
         </div>
       </div>
       <div class="cells">
-        <a class="cell cell--accent" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20que%20revise%20un%20documento%20antes%20de%20firmar." data-wa>
+        <a class="cell cell--accent" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20que%20revise%20un%20documento%20antes%20de%20firmar." data-wa onclick="return contactoWhatsApp(this)">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
         <a class="cell cell--tone" href="#proceso">Ver cómo se lleva un caso</a>
       </div>
@@ -455,7 +481,7 @@
       </div>
       <input type="hidden" name="text" value="Hola, Miguel. Quiero hacer una consulta." data-text>
       <button class="submit" type="submit"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg><span>Consultar por WhatsApp</span></button>
-      <p class="coupon__alt">O <a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>escriba directo por WhatsApp</a>.</p>
+      <p class="coupon__alt">O <a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">escriba directo por WhatsApp</a>.</p>
     </div>
   </form>
 
@@ -466,7 +492,7 @@
         <p>Centro Comercial Santafé, Calle 185 No.&nbsp;45-03, Zona Met, pisos 4 y 5, Bogotá D.C., 111711.</p>
         <p>También atiende en su oficina de Chía, y en Cajicá, Zipaquirá y municipios aledaños con cita.</p>
         <p>Con cita previa, en persona o por videollamada.</p>
-        <p><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20agendar%20una%20cita." data-wa>WhatsApp +57&nbsp;301&nbsp;507&nbsp;0487</a></p>
+        <p><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20agendar%20una%20cita." data-wa onclick="return contactoWhatsApp(this)">WhatsApp +57&nbsp;301&nbsp;507&nbsp;0487</a></p>
         <p><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Centro%20Comercial%20Santaf%C3%A9%20Calle%20185%20%2345-03%20Bogot%C3%A1" target="_blank" rel="noopener">Abrir en Google Maps</a></p>
       </address>
     </div>
@@ -490,7 +516,7 @@
       <div class="back__right">
         <ul class="back__lines">
           <li class="back__label">Expediente: Miguel Bermúdez – Abogado</li>
-          <li><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>WhatsApp +57&nbsp;301&nbsp;507&nbsp;0487</a></li>
+          <li><a class="link" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">WhatsApp +57&nbsp;301&nbsp;507&nbsp;0487</a></li>
           <li><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Centro%20Comercial%20Santaf%C3%A9%20Calle%20185%20%2345-03%20Bogot%C3%A1" target="_blank" rel="noopener">Centro Comercial Santafé, Calle 185 No.&nbsp;45-03, Zona Met, pisos 4 y 5, Bogotá D.C., 111711</a></li>
           <li>Oficina en Chía</li>
           <li>Cajicá, Zipaquirá y municipios aledaños, con cita</li>
@@ -502,7 +528,7 @@
   </div>
 </footer>
 
-<a class="dock" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa>
+<a class="dock" href="https://wa.me/573015070487?text=Hola%2C%20Miguel.%20Quiero%20hacer%20una%20consulta." data-wa onclick="return contactoWhatsApp(this)">
   <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-wa"/></svg>Consultar por WhatsApp</a>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">

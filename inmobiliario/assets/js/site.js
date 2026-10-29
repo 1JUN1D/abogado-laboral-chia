@@ -289,6 +289,8 @@
     coupon.addEventListener('submit', (e) => {
       e.preventDefault();
       const url = `https://wa.me/${WA}?text=${encodeURIComponent(compose())}`;
+      // Misma conversion de Google Ads que los botones (Inmobiliario_WhatsApp_29OCT), luego abre WhatsApp.
+      if (window.contactoWhatsApp) { window.contactoWhatsApp(url); return; }
       const w = window.open(url, '_blank');
       if (w) w.opener = null; else location.href = url;
     });
